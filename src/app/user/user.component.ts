@@ -11,7 +11,7 @@ export class UserComponent implements OnInit {
   userForm: FormGroup;
   userResult: any;
 
-  private BASE_URL = 'http://localhost:8080';
+  private BASE_URL = 'https://java-leakage-detection-api.onrender.com';
   typeResult: any[] = [];
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.userForm = this.fb.group({

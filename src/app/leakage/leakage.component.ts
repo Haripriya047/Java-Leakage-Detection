@@ -14,7 +14,7 @@ export class LeakageComponent {
   leakageResult: string = '';
   userResult: any[] = [];
 
-  private BASE_URL = 'http://localhost:8080';
+  private BASE_URL = 'https://java-leakage-detection-api.onrender.com';
   selectedResult: any;
 field: any='';
   searchResult: any[]=[];

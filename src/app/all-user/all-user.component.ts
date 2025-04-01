@@ -9,7 +9,7 @@ import { FormBuilder } from '@angular/forms';
 })
 export class AllUserComponent implements OnInit {
   userResult:any[]=[];
-  private BASE_URL = 'http://localhost:8080';
+  private BASE_URL = 'https://java-leakage-detection-api.onrender.com';
   p: number =1
 
   constructor(private fb: FormBuilder, private http: HttpClient){}
