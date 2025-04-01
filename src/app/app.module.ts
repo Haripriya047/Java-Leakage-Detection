@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 import { AllUserComponent } from './all-user/all-user.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 
@@ -36,7 +37,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),{ provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
