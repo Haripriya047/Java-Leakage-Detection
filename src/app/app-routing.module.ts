@@ -7,7 +7,7 @@ import { AllUserComponent } from './all-user/all-user.component';
 const routes: Routes = [
   { path: "leakage", component:LeakageComponent},
   { path: "", component:UserComponent },
-  {path:"all-User",component:AllUserComponent}
+  {path:"all-User",component:AllUserComponent}  
 ];
 
 @NgModule({

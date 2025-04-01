@@ -12,6 +12,6 @@ platformBrowserDynamic().bootstrapModule(AppModule, {
   
   bootstrapApplication(AppComponent, {
     providers: [
-      provideHttpClient(withFetch()) // Enable fetch API
+      provideHttpClient(withFetch()), // Enable fetch API
     ]
   }).catch(err => console.error(err));
